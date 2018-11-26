@@ -1,0 +1,79 @@
+
+//Media Query Manager
+/*
+0-600px:phone
+600-900px:Tablet portrait
+900-1200px:Tablet Landscape
+[1200-1800] is where our normal styles apply
+1800px +:Big desktop
+*/
+
+@mixin respond-phone
+{
+	@media (max-width:600px){@content};
+}
+/*
+$breakpoint arguement choices
+-phone
+-tab-part
+-tab-land
+-big-desktop
+1em=16px
+
+*/
+
+@mixin respond($breakpoint)
+{
+	@if $breakpoint==phone{
+		@media (max-width:33.75em){@content};//540px
+    }
+    @if $breakpoint==big-phone{
+		@media (max-width:45em){@content};//720px
+	}
+	@if $breakpoint==tab-port{
+		@media (max-width:60em){@content};//900px
+	}
+	@if $breakpoint==tab-land{
+		@media (max-width:75em){@content};//1200px
+	}
+	@if $breakpoint==big-desktop{
+		@media (min-width:112.5em){@content};//1800px
+	}
+	
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+    @include pseudo($pos: $position);
+    width: 0;
+    height: 0;
+    @if $round {
+        border-radius: 3px;
+    }
+    @if $direction == down {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+        margin-top: 0 - round( $size / 2.5 );
+    } @else if $direction == up {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+        margin-bottom: 0 - round( $size / 2.5 );
+    } @else if $direction == right {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+        margin-right: -$size;
+    } @else if  $direction == left {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+        margin-left: -$size;
+    }
+}

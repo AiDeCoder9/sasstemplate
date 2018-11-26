@@ -1,0 +1,85 @@
+.nav{
+    &-user{
+
+        &-text{
+            width:2.5rem;
+            height:2.5rem;
+            border-radius: 50%;
+            background:$gender-male;
+            color:white;
+            text-align: center;
+            line-height: 2.5rem;
+        }
+        &-img{
+                img{
+                width:80px;
+                height:80px;
+                border-radius: 50%;
+                background:$task-body;
+                margin:0 auto;
+                display: block;
+            }
+        }
+    }
+
+    
+}
+
+.mynav{
+    &-bar{
+        padding:0 1rem;
+        background:$nav-background;
+    }
+    &-dropdown{
+        border-radius: 0;
+        width: 300px;
+        background: #fefefe;
+        padding:0;
+        
+    }
+    &-user{
+        position: relative;
+        &-edit{
+            position: absolute;
+            right:.4rem;
+            font-size:.8rem;
+            text-transform: uppercase;
+            text-decoration:none;
+            
+            &:link,&:active{
+                border:2px solid red;
+                border-radius: 3px;
+                padding:3px 5px;
+                color:$color-grey;
+            }
+            &:hover,&:visited{
+                text-decoration: none;
+                border-color: $task-body;
+                color:$color-grey;
+            }
+        }
+        &-name{
+            font-size:1.2rem;
+            margin-top:.5rem;
+            font-family: raleway;
+            margin-bottom:5px;
+            color:$color-grey;
+        }
+        &-email{
+            color:$nav-background;
+            font-family: raleway;
+            margin-bottom:0;
+        }
+        &-gender{
+            color:$nav-background;
+            font-family: raleway;
+            margin-bottom:0;
+        }
+        &-detail{
+            p{
+                color:$text-color;
+            }
+        }
+    }
+    
+}

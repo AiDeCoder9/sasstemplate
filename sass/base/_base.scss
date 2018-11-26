@@ -1,0 +1,21 @@
+html{
+
+    @include respond(phone)
+	{
+		font-size:81.25%;  //1rem =8px ,/16=70%
+	}
+	
+	@include respond(tab-land)
+	{
+		font-size:94.75%; //1rem=9px, 9/16=56.25%
+	}
+	@include respond(tab-port)
+	{
+		font-size:87.5%;  //1rem =8px ,/16=50%
+	}
+	@include respond(big-desktop)
+	{
+		font-size:87.5%;//1rem =12px 12/16=75%
+	}
+}
+
