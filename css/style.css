@@ -57,36 +57,130 @@ $breakpoint arguement choices
   background: #fefefe;
   padding: 0; }
 
-.mynav-user {
-  position: relative; }
-  .mynav-user-edit {
-    position: absolute;
-    right: .4rem;
-    font-size: .8rem;
-    text-transform: uppercase;
-    text-decoration: none; }
-    .mynav-user-edit:link, .mynav-user-edit:active {
-      border: 2px solid red;
-      border-radius: 3px;
-      padding: 3px 5px;
-      color: #333; }
-    .mynav-user-edit:hover, .mynav-user-edit:visited {
-      text-decoration: none;
-      border-color: #F5F3F5;
-      color: #333; }
-  .mynav-user-name {
-    font-size: 1.2rem;
-    margin-top: .5rem;
-    font-family: raleway;
-    margin-bottom: 5px;
+.mynav-user-edit {
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer; }
+  .mynav-user-edit:link, .mynav-user-edit:active {
+    border: 2px solid red;
+    border-radius: 3px;
+    padding: 3px 5px;
     color: #333; }
-  .mynav-user-email {
-    color: #0CAADC;
+  .mynav-user-edit:hover, .mynav-user-edit:visited {
+    text-decoration: none;
+    border-color: #F5F3F5;
+    color: #333; }
+
+.mynav-user-name {
+  font-size: 1.2rem;
+  margin-top: .5rem;
+  font-family: raleway;
+  margin-bottom: 5px;
+  color: #333; }
+
+.mynav-user-email {
+  color: #0CAADC;
+  font-family: raleway;
+  margin-bottom: 0; }
+
+.mynav-user-gender {
+  color: #0CAADC;
+  font-family: raleway;
+  margin-bottom: 1.5rem !important;
+  font-size: .9rem; }
+
+.mynav-user-detail p {
+  color: #ccc; }
+
+.bar-side {
+  background: #F5F3F5;
+  height: 100vh;
+  padding: .2rem; }
+  .bar-side-list {
+    margin: 0;
+    padding: 0; }
+
+body {
+  background: #fafafa; }
+
+.login-title {
+  font-size: 2rem;
+  font-family: raleway;
+  padding: .5rem 3rem; }
+  @media (max-width: 33.75em) {
+    .login-title {
+      display: block;
+      padding: .5rem 1rem; } }
+
+.login-text {
+  font-family: raleway; }
+  .login-text h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 1.5rem; }
+  .login-text p {
+    font-size: 1.3rem; }
+    .login-text p a:link, .login-text p a:active, .login-text p a:hover, .login-text p a:visited {
+      text-decoration: none; }
+
+.login-message {
+  font-size: .8rem; }
+  @media (max-width: 33.75em) {
+    .login-message {
+      margin-top: 0 !important; } }
+
+.loginbox-form {
+  border-right: 1px solid #ccc;
+  padding: 2rem 2rem;
+  margin-top: 2rem; }
+  .loginbox-form .form-group .form-control {
+    border: 0;
+    background: #fafafa;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 1.1rem; }
+    .loginbox-form .form-group .form-control:focus {
+      outline: none;
+      box-shadow: none; }
+  .loginbox-form a:link, .loginbox-form a:active, .loginbox-form a:visited, .loginbox-form ahover {
+    color: #2d3030;
+    text-decoration: none; }
+
+.loginbox-btn {
+  color: #008DD5;
+  border: 1px solid #008DD5;
+  border-radius: 100px;
+  background: #fafafa;
+  padding: .3rem 3rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-family: raleway;
+  cursor: pointer; }
+  .loginbox-btn:focus {
+    outline: none; }
+
+.loginbox-sociallink {
+  padding: 6rem 4rem; }
+  @media (max-width: 75em) {
+    .loginbox-sociallink {
+      padding: 6rem 2rem; } }
+  @media (max-width: 33.75em) {
+    .loginbox-sociallink {
+      padding: 4rem .5rem;
+      padding-bottom: 2rem; } }
+
+.background-1 {
+  background: #3b5998; }
+
+.color-1 {
+  color: #3b5998; }
+
+.socialbox {
+  border: 1px solid #ccc;
+  margin-bottom: 2rem; }
+  .socialbox span {
+    font-weight: 600;
     font-family: raleway;
-    margin-bottom: 0; }
-  .mynav-user-gender {
-    color: #0CAADC;
-    font-family: raleway;
-    margin-bottom: 0; }
-  .mynav-user-detail p {
-    color: #ccc; }
+    letter-spacing: 1px; }

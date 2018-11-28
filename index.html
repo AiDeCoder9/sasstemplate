@@ -43,12 +43,13 @@
                           </div>
     
                           
-                      <a href="" class="mynav-user-edit">Edit profile</a>
+                      
                       <div class="nav-user-img mt-4">
                         <img src="img/1.jpg" alt="" class="img-fluid" alt="User Profile Image">
                       </div>
+
                       <div class="text-center">
-                          <h4 class="mynav-user-name">John Cena</h4>
+                          <h4 class="mynav-user-name">John Cena <a class="fas fa-edit mynav-user-edit text-success"  data-toggle="tooltip" data-placement="left" title="Edit Profile"></a></h4>
                           <p class="mynav-user-email">sajanproject@gmail.com</p>
                           <span class="mynav-user-gender">Male</span>
                       </div>
@@ -69,6 +70,62 @@
 
 
 
+
+<!-- 
+        <div class="taskwrapper">
+
+          <div id="sidebar" class="sidebar">
+
+            <ul class="sidebar-list">
+              <li class="sidebar-item">
+                hello
+              </li>
+            </ul>
+
+          </div>
+          <div id="taskbar" class="taskbar">i m taskbar</div>
+          <div id="detailbar" class=" bg-success">i m detail bar</div>
+
+        </div>
+
+
+        <button class="btn btn-primary call-grid">Test</button> -->
+
+        <section class="section-test">
+          
+          <div class="d-flex flex-row">
+            <div class="col-2 p-0">
+
+              
+              <div class="bar-side">
+                  <i class="fas fa-bars px-3 mt-3 mb-4"></i>
+                <ul class="bar-side-list">
+                  <li class="bar-side-list-item d-flex  mb-3">
+                    <div class="flex-shrink-1"><i class="fas fa-sun text-secondary px-3"></i></div>
+                    <div class="w-100 bar-side-list-item-category">My Day <span class="d-inline-block text-right float-right px-2">1</span></div>
+                  <div class="clearfix"></div>
+                  </li>
+
+                  <li class="bar-side-list-item d-flex  mb-2">
+                      <div class="flex-shrink-1"><i class="far fa-star text-secondary px-3"></i></div>
+                      <div class="w-100 bar-side-list-item-category">Important <span class="d-inline-block text-right float-right px-2">1</span></div>
+                    <div class="clearfix"></div>
+                    </li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="col p-0">
+              <div class="bar-task bg-success"></div>
+            </div>
+            <div class="col-3 p-0">
+              <div class="bar-detail">
+
+              </div>
+            </div>
+          </div>
+        
+        </section>
     
 
 
@@ -89,12 +146,20 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/tooltip.js/dist/tooltip.min.js"></script> 
+    <script src="node_modules/tooltip.js/dist/tooltip.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
     <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="node_modules/animejs/anime.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+      $('.call-grid').click(function(){
+        $('#detailbar').addClass('d-block');
+        $('.taskwrapper').addClass('grid-arrange');
+      })
+    </script>
     
   </body>
 </html>

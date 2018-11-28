@@ -9,6 +9,10 @@ $('.mynavbar-back-close').click(function(){
   $('.mynavbar-back').removeClass('d-block');
 });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
 $(function() {
     // Smooth Scrolling
     $('a[href*="#"]:not([href="#"])').click(function() {

@@ -38,13 +38,13 @@
         
     }
     &-user{
-        position: relative;
+        
         &-edit{
-            position: absolute;
-            right:.4rem;
+            
             font-size:.8rem;
             text-transform: uppercase;
             text-decoration:none;
+            cursor: pointer;
             
             &:link,&:active{
                 border:2px solid red;
@@ -73,7 +73,8 @@
         &-gender{
             color:$nav-background;
             font-family: raleway;
-            margin-bottom:0;
+            margin-bottom:1.5rem!important;
+            font-size: .9rem;
         }
         &-detail{
             p{
@@ -83,3 +84,4 @@
     }
     
 }
+

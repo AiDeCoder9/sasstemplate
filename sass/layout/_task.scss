@@ -1,0 +1,21 @@
+.bar{
+    
+    &-side{
+        background:$task-body;
+        height:100vh;
+        padding:.2rem;
+
+        &-list{
+            margin:0;
+            padding:0;
+        }
+    }
+    &-detail{
+
+    }
+    &-task{
+
+    }
+
+
+}

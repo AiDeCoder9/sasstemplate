@@ -1,0 +1,131 @@
+body{
+    background:#fafafa;
+}
+
+.login{
+
+    &-title{
+    font-size:2rem;
+    font-family: raleway;
+    padding:.5rem 3rem;
+
+    @include respond(phone){
+        display: block;
+        padding:.5rem 1rem;
+    }
+
+    }
+
+    &-text{
+        font-family: raleway;
+        h1{
+            font-size:3rem;
+            font-weight: 300;
+            color:#333;
+            margin-bottom:1.5rem;
+            
+        }
+        p{
+            font-size:1.3rem;
+    
+            a{
+                &:link,&:active,&:hover,&:visited{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &-message{
+        font-size:.8rem;
+        @include respond(phone){
+            margin-top:0!important;
+        }
+    }
+}
+
+
+
+
+.loginbox{
+
+    &-form{
+    border-right:1px solid #ccc;
+    padding:2rem 2rem;
+    margin-top:2rem;
+        .form-group{
+            .form-control{
+                border:0;
+                background:#fafafa;
+                border-bottom:1px solid #ccc;
+                border-radius: 0;
+                font-size: 1.1rem;
+
+                &:focus{
+                    outline:none;
+                    box-shadow: none;
+
+                }
+            }
+        }
+        a{
+            &:link,&:active,&:visited,&hover{
+                color:#2d3030;
+                text-decoration: none;
+            }
+        }
+    }
+    &-btn{
+        color:#008DD5;
+        border:1px solid #008DD5;
+        border-radius: 100px;
+        background:#fafafa;
+        padding:.3rem 3rem;
+        font-size:1.2rem;
+        margin-top:2rem;
+
+        font-family: raleway;
+        cursor: pointer;
+        &:focus{
+            outline:none;
+
+        }
+
+    }
+
+    &-sociallink{
+        padding:6rem 4rem;
+
+        @include respond(tab-land){
+            padding:6rem 2rem;
+        }
+        @include respond(phone){
+            padding:4rem .5rem;
+            padding-bottom:2rem;
+        }
+    }
+}
+
+
+
+
+
+
+.background-1{
+    background:#3b5998;
+}
+.color-1{
+    color:#3b5998;
+}
+
+.socialbox{
+    border:1px solid #ccc;
+    margin-bottom:2rem;
+
+    span{
+        font-weight: 600;
+        font-family: raleway;
+        letter-spacing: 1px;
+
+    }
+}
+
