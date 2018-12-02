@@ -98,16 +98,22 @@
 
               
               <div class="bar-side">
-                  <i class="fas fa-bars px-3 mt-3 mb-4"></i>
+                <form action="">
+                  <div class="form-group bar-side-search">
+                      <input type="search" class="form-control" placeholder="Search...">
+                  </div>
+                </form>
+
+                  
                 <ul class="bar-side-list">
                   <li class="bar-side-list-item d-flex  mb-3">
-                    <div class="flex-shrink-1"><i class="fas fa-sun text-secondary px-3"></i></div>
+                    <div class="flex-shrink-1 task-category"><i class="fas fa-sun text-secondary px-3"></i></div>
                     <div class="w-100 bar-side-list-item-category">My Day <span class="d-inline-block text-right float-right px-2">1</span></div>
                   <div class="clearfix"></div>
                   </li>
 
                   <li class="bar-side-list-item d-flex  mb-2">
-                      <div class="flex-shrink-1"><i class="far fa-star text-secondary px-3"></i></div>
+                      <div class="flex-shrink-1 task-category"><i class="far fa-star text-secondary px-3"></i></div>
                       <div class="w-100 bar-side-list-item-category">Important <span class="d-inline-block text-right float-right px-2">1</span></div>
                     <div class="clearfix"></div>
                     </li>
@@ -116,8 +122,59 @@
               </div>
             </div>
             <div class="col p-0">
-              <div class="bar-task bg-success"></div>
+              <div class="bar-task">
+                 <div class="bar-task-header">
+                   <h1 class="d-inline-block color-theme">Tasks..</h1>
+                   <i class="fas fa-bars px-3 mt-2 mb-4 d-inline-block"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="bar-side-active"></i>
+
+                   <div class="dropdown-menu bar-task-dropdown dropdowm-menu-right" style="position: relative;" aria-labelledby="task-update">
+                    
+                    <h6 class="text-center">List Options</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" id="theme-active"><i class="fas fa-palette text-secondary mr-3"></i> Change Theme</a>
+
+                    <a class="dropdown-item" href="#"><i class="far fa-check-circle text-secondary mr-3"></i> Hide completed Task</a>
+                    
+
+                    <div class="theme-setter">
+                      <p class="color-theme">Customize your list by choosing a color and scene</p>
+                      <h6>Choose a color</h6>
+
+
+                      <ul class="nav color-pallete-nav">
+                        <li class="nav-item color-bg-1 "  data-color-theme="color-theme-1">
+                          
+                        </li>
+                        <li class="nav-item color-bg-2" data-color-theme="color-theme-2">
+                          
+                        </li>
+                        <li class="nav-item color-bg-3" data-color-theme="color-theme-3">
+                          
+                        </li>
+                        <li class="nav-item color-bg-4" data-color-theme="color-theme-4">
+                          
+                        </li>
+                      </ul>
+
+                    </div>
+                    
+                  </div>
+                 
+                  </div>
+
+                <div class="bar-task-list">
+                  <ul>
+                    <li>
+                      
+                    </li>
+                  </ul>
+                </div>
+
+
+              </div>
             </div>
+
+            <!--end of bar task-->
             <div class="col-3 p-0">
               <div class="bar-detail">
 
@@ -145,8 +202,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/tooltip.js/dist/tooltip.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
@@ -155,11 +211,19 @@
     <script src="js/custom.js"></script>
 
     <script>
-      $('.call-grid').click(function(){
-        $('#detailbar').addClass('d-block');
-        $('.taskwrapper').addClass('grid-arrange');
-      })
+    
+      $('.color-pallete-nav li').click(function(e){
+
+        e.preventDefault()
+        var z =$(this).attr('data-color-theme');
+        $('.color-theme').addClass(z);
+      });
+
+
     </script>
+
+
+    
     
   </body>
 </html>

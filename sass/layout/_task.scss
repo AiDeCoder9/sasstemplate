@@ -5,6 +5,21 @@
         height:100vh;
         padding:.2rem;
 
+        &-search{
+            padding-top:1rem;
+            &:after{
+                content:'';
+                display: block;
+                widows: 100%;
+                background:#ccc;
+                height:1px;
+                margin-top:1rem;
+            }
+            .form-control{
+                border-radius: 0;
+            }
+        }
+
         &-list{
             margin:0;
             padding:0;
@@ -14,8 +29,87 @@
 
     }
     &-task{
+        background:white;
+        height:100vh;
+        padding:.4rem;
+
+        &-header{
+            h1{
+                font-size: 1.5rem;
+                
+                font-family: raleway;
+            }
+        }
+
+        &-dropdown{
+            border-radius: 0;
+            width:250px;
+        }
+
+        &-list{
+
+            ul{
+                list-style: none;
+                margin:0;
+                padding:0;
+            }
+        }
 
     }
 
 
+}
+#bar-side-active{
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover{
+        color:$nav-background;
+        transform: rotate(360deg);
+        
+    }
+}
+
+.theme-setter{
+    width:250px;height:auto;
+     padding:.2rem .5rem;
+      background:white;
+      box-shadow:0px 0px 6px gray;
+      position: absolute;
+      right:-255px;
+      top:0rem;
+      display: none;
+      cursor: pointer;
+
+      P{
+          
+          font-size: 1rem;
+          line-height: 1;
+      }
+
+      h6{
+          color:$color-grey;
+      }
+}
+
+
+//must edit
+.filterbox-filter-item input[type="checkbox"] + .label-text:before
+{
+	content: "\ea2c";
+	font-family: "amejman";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	width: 1em;
+	display: inline-block;
+	margin-right: 10px;
+	color: blue;
+}
+.filterbox-filter-item input[type="checkbox"]:checked + .label-text:before
+{
+	content: "\e920";
+	color:green;
 }

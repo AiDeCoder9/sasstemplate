@@ -1,3 +1,30 @@
+.color-theme {
+  color: #1B9AAA; }
+
+.color-bg-1 {
+  background-color: #EF476F; }
+
+.color-bg-2 {
+  background-color: #1B9AAA; }
+
+.color-bg-3 {
+  background-color: #FFC43D; }
+
+.color-bg-4 {
+  background-color: #FD151B; }
+
+.color-theme-1 {
+  color: #EF476F; }
+
+.color-theme-2 {
+  color: #1B9AAA; }
+
+.color-theme-3 {
+  color: #FFC43D; }
+
+.color-theme-4 {
+  color: #FD151B; }
+
 /*
 0-600px:phone
 600-900px:Tablet portrait
@@ -29,6 +56,15 @@ $breakpoint arguement choices
 @media (min-width: 112.5em) {
   html {
     font-size: 87.5%; } }
+
+.color-pallete-nav {
+  padding: 1rem;
+  padding-bottom: 1.5rem; }
+  .color-pallete-nav li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 1rem; }
 
 .nav-user-text {
   width: 2.5rem;
@@ -97,9 +133,76 @@ $breakpoint arguement choices
   background: #F5F3F5;
   height: 100vh;
   padding: .2rem; }
+  .bar-side-search {
+    padding-top: 1rem; }
+    .bar-side-search:after {
+      content: '';
+      display: block;
+      widows: 100%;
+      background: #ccc;
+      height: 1px;
+      margin-top: 1rem; }
+    .bar-side-search .form-control {
+      border-radius: 0; }
   .bar-side-list {
     margin: 0;
     padding: 0; }
+
+.bar-task {
+  background: white;
+  height: 100vh;
+  padding: .4rem; }
+  .bar-task-header h1 {
+    font-size: 1.5rem;
+    font-family: raleway; }
+  .bar-task-dropdown {
+    border-radius: 0;
+    width: 250px; }
+  .bar-task-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+#bar-side-active {
+  cursor: pointer;
+  transition: 1s; }
+  #bar-side-active:hover {
+    color: #0CAADC;
+    transform: rotate(360deg); }
+
+.theme-setter {
+  width: 250px;
+  height: auto;
+  padding: .2rem .5rem;
+  background: white;
+  box-shadow: 0px 0px 6px gray;
+  position: absolute;
+  right: -255px;
+  top: 0rem;
+  display: none;
+  cursor: pointer; }
+  .theme-setter P {
+    font-size: 1rem;
+    line-height: 1; }
+  .theme-setter h6 {
+    color: #333; }
+
+.filterbox-filter-item input[type="checkbox"] + .label-text:before {
+  content: "\ea2c";
+  font-family: "amejman";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  width: 1em;
+  display: inline-block;
+  margin-right: 10px;
+  color: blue; }
+
+.filterbox-filter-item input[type="checkbox"]:checked + .label-text:before {
+  content: "\e920";
+  color: green; }
 
 body {
   background: #fafafa; }

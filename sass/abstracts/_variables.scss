@@ -15,4 +15,39 @@ $task-near:#FFC43D;
 $nav-background:#0CAADC;
 $color-grey:#333;
 
+$color-theme:#1B9AAA;
+
+.color-theme{color:$color-theme};
+
+
+
+
+.color-bg-1{
+    background-color:$gender-female;
+}
+.color-bg-2{
+    background-color:$gender-male;
+}
+.color-bg-3{
+    background-color:$task-near;
+}
+.color-bg-4{
+    background-color:$task-warning;
+}
+
+
+
+.color-theme-1{
+    color:$gender-female;
+}
+.color-theme-2{
+    color:$gender-male;
+}
+.color-theme-3{
+    color:$task-near;
+}
+.color-theme-4{
+    color:$task-warning;
+}
+
 
